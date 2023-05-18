@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Api-gateway" />
         <module name="HotelService" />
         <module name="UserService" />
         <module name="RatingService" />
@@ -14,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Api-gateway" target="17" />
       <module name="HotelService" target="17" />
       <module name="RatingService" target="17" />
       <module name="Service-Registry" target="17" />
@@ -22,6 +24,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Api-gateway" options="-parameters" />
       <module name="HotelService" options="-parameters" />
       <module name="RatingService" options="-parameters" />
       <module name="Service-Registry" options="-parameters" />
